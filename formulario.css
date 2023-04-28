@@ -1,0 +1,124 @@
+/*APARTIR DE AQUI SON CSS DEL FORMULARIO*/
+
+.form-1 h1{
+    color : #0254b7;
+}
+.form-1{
+    padding-top: 15%;
+}
+.input-1{
+    padding: 10px;
+    margin-top: 15px;
+    width: 20%;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    outline: none;
+    margin-right: 30px;
+}
+.input-1:focus{
+    border-bottom: 1px solid #0254b7;
+    color: blue;
+}
+
+
+.input-2{
+    padding: 10px;
+    margin-top: 15px;
+    width: 50%;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    outline: none;
+    margin-right: 30px;
+}
+.input-2:focus{
+    border-bottom: 1px solid #0254b7;
+    color: blue;
+}
+.conti-1, .conti-2, .conti-3{
+    padding: 10px 30px;
+    margin-top: 25px;
+    font-size: 16px;
+    background-color: #0254b7;
+    color: white;
+    border: none;
+    opacity: 0.3;
+    cursor: not-allowed;
+
+}
+.retro-1, .retro-2,.retro-0{
+    padding: 10px 30px;
+    margin-top: 25px;
+    font-size: 16px;
+    background-color: #0254b7;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.inicio-1{
+    padding: 4px 20px;
+    margin-top: 25px;
+    font-size: 25px;
+    background-color: #0254b7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+
+.error{
+    border-bottom: 1px solid red;
+}
+.progress-bar{
+    position: absolute;
+    bottom: 50px;
+    left: 7%;
+}
+.bot-icon-1, .bot-icon-2, .bot-icon-3{
+    font-size: 35px !important;
+    color: #c7c7c7;
+}
+.step-1{
+    position: relative;
+    float: left;
+    width: 250px;
+}
+.line-1, .line-2, .line-3{
+    height: 2px;
+    width: 200px;
+    background-color: #c7c7c7;
+    top: 50%;
+    left: 40px;
+}
+.form-2, .form-3, .form-4{
+    display: none;
+}
+.check{
+    zoom: 1.8;
+    position: absolute;
+    height: 13px;
+    width: auto;
+}
+label{
+    margin-left: 10px ;
+    margin-right: 45px;
+    margin-bottom: -15px;
+}
+/*FIN DE FORMULARIO*/
+
+
+/*MODAL*/
+
+
+#modal::backdrop{
+    background-color: rgba(0,0,0,.55);
+
+}
+#modal{
+    max-width: 100ch;
+}
+#cerrarPop-up1,#cerrarPop-up2{
+    float: right;
+    background-color: aqua;
+    color: black;
+}
+/*FIN DE MODAL*/

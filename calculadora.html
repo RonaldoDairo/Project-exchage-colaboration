@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculadorastyle.css">
+    <title>Conversor de moneda</title>
+</head>
+
+<body>
+
+    <img src="img/icono.png" alt="" class="conversor-imagen">
+    <h1>Conversor de moneda</h1>
+    <p>Escoje la moneda y la cantidad para realizar la conversion</p>
+    
+    <div class="container">
+        <div class="moneda">
+            <select id="moneda-uno">
+
+                <option value="CLP">CLP</option>
+                <option value="COP">COP</option>
+                <option value="EUR"selected>EUR</option>
+                <option value="PEN">PEN</option>
+                <option value="USD">USD</option>
+                <option value="VES">VES</option>
+
+            </select>
+
+            <input 
+            type="number" 
+            id="cantidad-uno" 
+            placeholder="0"  
+            value="1"
+            >
+
+        </div>
+
+        <div class="taza-cambio-container">
+            <button class="btn" id="taza">
+                cambio
+            </button>
+
+            <div class="cambio" id="cambio"></div>
+
+        </div>
+
+        <div class="moneda">
+            <select id="moneda-dos">
+                <option value="CLP">CLP</option>
+                <option value="COP">COP</option>
+                <option value="EUR">EUR</option>
+                <option value="PEN">PEN</option>
+                <option value="USD">USD</option>
+                <option value="VES"selected>VES</option>
+
+            </select>
+
+            <input 
+            type="number" 
+            id="cantidad-dos" 
+            placeholder="0"  
+            >
+
+        </div>
+        <button id="btn-1" type="" >ENVIAR</button>
+        <button id="btn-2" type="reset" >RESET</button>
+    </div>
+
+<script src="calculadorajs.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ADA</title>
+    <link rel="stylesheet" href="formulario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<script src="jquery-3.6.3.js"></script>--> <!--puedo usar esta otro opcion tambien-->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossOrigin="anonymous"></script>
+</head>
+<body>
+<div class="anexodecalculadora">
+
+    <img src="img/icono.png" alt="" class="conversor-imagen">
+    <h1>Conversor de moneda</h1>
+    <p>Escoje la moneda y la cantidad para realizar la conversion</p>
+
+    <div class="container">
+        <div class="moneda">
+            <select id="moneda-uno">
+
+                <option value="CLP">CLP</option>
+                <option value="COP">COP</option>
+                <option value="EUR"selected>EUR</option>
+                <option value="PEN">PEN</option>
+                <option value="USD">USD</option>
+                <option value="VES">VES</option>
+
+            </select>
+
+            <input
+                    type="number"
+                    id="cantidad-uno"
+                    placeholder="0"
+                    value="1"
+            >
+
+        </div>
+
+        <div class="taza-cambio-container">
+            <button class="btn" id="taza">
+                cambio
+            </button>
+
+            <div class="cambio" id="cambio"></div>
+
+        </div>
+
+        <div class="moneda">
+            <select id="moneda-dos">
+                <option value="CLP">CLP</option>
+                <option value="COP">COP</option>
+                <option value="EUR">EUR</option>
+                <option value="PEN">PEN</option>
+                <option value="USD">USD</option>
+                <option value="VES"selected>VES</option>
+
+            </select>
+
+            <input
+                    type="number"
+                    id="cantidad-dos"
+                    placeholder="0"
+            >
+
+        </div>
+        <button id="btn-1" type="" >ENVIAR</button>
+        <button id="btn-2" type="reset" >RESET</button>
+    </div>
+
+
+</div>
+
+
+<!--Formulario1-->
+<div  class="form-1">
+    <div class="container">
+        <h1><i class="fa fa-user-o"></i> &nbsp; DATOS DEL REMITENTE </h1>
+        <input type="text" placeholder="Nombre" class="input-1" name="emisor" required>
+        <input type="text" placeholder="Apellido" class="input-1" name="Apellidoemisor"><br><br/>
+        <input type="file" placeholder="" class="input-file" name="IDemisor"><br><br/>
+        <div class="clearfix"></div>
+        <button class="conti-1" disabled="true">Continuar &nbsp;<i class="fa fa-angle-right"></i></button>
+        <button class="retro-0">   <i class="fa fa-angle-left"></i> &nbsp;Retroceder </button>
+    </div>
+</div>
+
+<!--Formulario2-->
+<div  class="form-2">
+    <div class="container">
+        <h1><i class="fa fa-language"></i> &nbsp; DATOS DEL DESTINATARIO </h1><br><br/>
+        <input type="text" placeholder="Nombre" class="input-1" name="receptor">
+        <input type="text" placeholder="Apellido" class="input-1" name="Apellidoreceptor"><br><br>
+        <input type="file" placeholder="" class="input-file" name="IDreceptor"><br><br/>
+        <button id="abrirPop-up"><span style="color: blue">ABRIR<strong>"LOPD"</strong> </span></button>
+
+        <dialog id="modal">
+            <button id="cerrarPop-up1">X</button>
+            <h3><strong>Ley Organica De Proteccion De Datos "LOPD"</strong> </h3>
+            <embed id="pop-up"src="BOE-A-2018-16673.pdf" type="application/pdf" width="800px" height="800px"><embed/>
+        <button id="cerrarPop-up2">Cerrar</button></dialog>
+        <div class="clearfix"></div>
+        <label><strong>Ley organica de proteccion de datos</strong></label><br><br/>
+        <input type="checkbox"class="check"><br><br/>
+        <button class="conti-2" disabled="true">Continuar &nbsp;<i class="fa fa-angle-right"></i></button>
+        <button class="retro-1">   <i class="fa fa-angle-left"></i> &nbsp;Retroceder </button>
+            </div>
+</div>
+<!--Formulario3-->
+<div class="form-3">
+<div class="container">
+    <h1><i class="fa fa-mail"></i> &nbsp; Correo Electronico </h1>
+    <input type="email" placeholder="correo electronico" name="correoElectronico" class="input-2">
+
+    <div class="clearfix"></div>
+    <button class="conti-3" disabled="true" type="submit" name="recibido">Continuar &nbsp;<i class="fa fa-angle-right"></i></button>
+    <button class="retro-2">   <i class="fa fa-angle-left"></i> &nbsp;Retroceder </button>
+</div>
+</div>
+
+<!--Formulario4-->
+
+<div class="form-4">
+<div class="container">
+    <!--colocar el style de span en la carpeta de css-->
+    <h1>Felicidades! Enviado Con Exito <br><br/>Sus <span style="color: blue">Datos</span> </h1>
+    <button class="inicio-1" ><a href="index.html">INICIO</a></button>
+</div>
+</div>
+
+<div class="progress-bar">
+    <div class="container">
+        <!--paso1-->
+        <div class="step-1">
+       <i class="fa fa-user-o bot-icon-1"></i>
+        <div class="line-1"></div>
+    </div>
+        <!--paso2-->
+        <div class="step-1">
+            <i class="fa fa-language bot-icon-2"></i>
+            <div class="line-2"></div>
+        </div>
+        <!--paso3-->
+        <div class="step-1">
+            <i class="fa fa-globe bot-icon-3"></i>
+            <div class="line-3"></div>
+        </div>
+
+
+</div>
+</div>
+<script src="ava.js">
+</script>
+<script src="calculadorajs.js"></script>
+</body>
+</html>

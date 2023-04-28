@@ -1,0 +1,246 @@
+/*El siguiente @import corresponde a la fuente utilizada para el NAVBAR*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:wght@300;700&display=swap');
+
+
+
+/*el siguiente codigo CSS es el utilizado para el NAVBAR*/
+/*ESTE APARTADO ESTILOS AFECTAN NEGATIVAMENTE AL FORMULARIO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar {
+    background-color: rgb(22, 7, 36);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 5rem;
+}
+
+.left h1 {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.checkBtn {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.checkBtn {
+    cursor: pointer;
+    font-size: 30px;
+    float: right;
+    color: #ed1e79;
+    line-height: 80px;
+}
+
+.right ul {
+    display: flex;
+    list-style: none;
+}
+
+.right ul li a {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+.right ul li a:hover {
+    background-color: #fff;
+    border-radius: 7px;
+    color: rgb(22, 7, 36);
+}
+
+/*el siguiente codigo CSS es el utilizado para el FOOTER*/
+
+#footer {
+    width: 100%;
+    padding-top: 2rem;
+}
+
+.upper-footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.up-left {
+    width: 700px;
+    display: flex;
+}
+
+.image {
+    width: 200px;
+    position: relative;
+}
+
+.up-left img {
+    position: absolute;
+    width: 100%;
+}
+
+.content {
+    width: 400px;
+    margin-left: 3rem;
+}
+
+.description {
+    font-size: 15px;
+    font-weight: 100;
+    color: black;
+}
+
+.footer-heading {
+    color: #404040;
+    font-size: 1.2rem;
+    margin-bottom: .6rem;
+    text-transform: uppercase;
+}
+
+.up-right ul {
+    display: flex;
+    list-style: none;
+}
+
+.up-right ul li {
+    height: 40px;
+    width: 40px;
+    padding: 6px;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    margin: 0 0.8rem 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.up-right ul li a {
+    color: white;
+}
+
+.linkedIn {
+    background-color: #0077b5;
+}
+
+.instagram {
+    background: linear-gradient(15deg, #ffb13d, #dd277b, #4d5ed4);
+}
+
+.youtube {
+    background-color: #f50000;
+}
+
+.github {
+    background-color: #24292E;
+}
+
+.down-footer {
+    width: 100%;
+    color: #404040;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-li {
+    display: flex;
+    list-style: none;
+}
+
+.footer-li li {
+    padding: 0 1rem;
+}
+
+.footer-li li a {
+    color: #404040;
+    text-decoration: none;
+}
+
+
+
+/*el siguiente @media es el utilizado para el NAVBAR*/
+@media screen and (max-width:805px) {
+    .list {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(22, 7, 36);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 4rem;
+        left: 100%;
+        transition: all 1s;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .checkBtn {
+        display: block;
+    }
+
+    #check:checked~ul {
+        left: 0%;
+    }
+
+
+/*el siguiente @media es el utilizado para el FOOTER*/
+
+    .up-left {
+        width: 100%;
+    }
+
+    .upper-footer,
+    .down-footer,
+    .up-left {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .image {
+        margin: 2rem 0;
+    }
+
+    .content {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footer-heading {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .down-footer {
+        flex-direction: column-reverse;
+    }
+
+    .down-footer .leftPara {
+        margin-top: 1rem;
+    }
+
+    .footer-li {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        line-height: 25px;
+        margin: 1rem auto;
+    }
+
+}
